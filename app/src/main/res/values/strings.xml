@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">GreenI</string>
+    <string name="toggle_flash">Toggle Flash</string>
+    <string name="action_settings">Settings</string>
+    <string name="scanned_data">Scanned Data</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="title_activity_maps2">MapsActivity2</string>
+    <string name="descPoints_icon">Points</string>
+    <string name="appNameish">GreenI</string>
+</resources>

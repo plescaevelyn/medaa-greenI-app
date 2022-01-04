@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myapplication">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the "MyLocation" functionality.
+    -->
+    <!-- Permission for camera -->
+    <uses-permission android:name="android.permission.CAMERA" /> <!-- Permission to vibrate -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_logotest"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_logotest"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication">
+        <activity
+            android:name=".RegisterUser"
+            android:exported="false" />
+        <activity
+            android:name=".RewardsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ForgotPassword"
+            android:exported="false" />
+        <activity
+            android:name=".WindmillActivity"
+            android:exported="false"
+            android:theme="@style/Theme.MyApplication.Popme" />
+        <activity
+            android:name=".TurtleActivity"
+            android:exported="false"
+            android:theme="@style/Theme.MyApplication.Popme" />
+        <activity
+            android:name=".TreeActivity"
+            android:exported="false"
+            android:theme="@style/Theme.MyApplication.Popme" />
+        <activity
+            android:name=".SolarActivity"
+            android:exported="false"
+            android:theme="@style/Theme.MyApplication.Popme" />
+        <activity
+            android:name=".RecycleActivity"
+            android:exported="false"
+            android:theme="@style/Theme.MyApplication.Popme" />
+        <activity
+            android:name=".LightbulbActivity"
+            android:exported="false"
+            android:theme="@style/Theme.MyApplication.Popme" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".QrScannerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Pop2"
+            android:exported="false"
+            android:theme="@style/Theme.MyApplication.Transparency" />
+        <activity
+            android:name=".MapsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QrScannerActivity">
+
+    <ImageButton
+        android:id="@+id/button_mapActivity"
+        android:layout_width="90dp"
+        android:layout_height="69dp"
+        android:background="@android:color/white"
+        android:scaleType="fitXY"
+
+        android:src="@drawable/ic_mapicon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button_QrScannerActivity"
+        app:layout_constraintHorizontal_bias="0.458"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.954" />
+
+    <ImageButton
+        android:id="@+id/button_QrScannerActivity"
+        android:layout_width="87dp"
+        android:layout_height="65dp"
+        android:background="@android:color/white"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_qrcodeicon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.53"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.954" />
+
+    <ImageButton
+        android:id="@+id/button_mainActivity"
+        android:layout_width="90dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="37dp"
+        android:background="@android:color/white"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_reviewicon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.36"
+        app:layout_constraintStart_toEndOf="@+id/button_QrScannerActivity"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.955" />
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="77dp"
+        android:layout_height="57dp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="119dp"
+        android:contentDescription="@string/descPoints_icon"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_points"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/camview"
+        app:layout_constraintVertical_bias="0.489" />
+
+    <TextView
+        android:id="@+id/pointsDisplay"
+        android:layout_width="264dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="casual"
+        android:text="Points"
+        android:textSize="34sp"
+        android:translationZ="90dp"
+        app:layout_constraintBottom_toTopOf="@+id/button_QrScannerActivity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/camview">
+
+    </TextView>
+
+    <eu.livotov.labs.android.camview.ScannerLiveView
+        android:id="@+id/camview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="23dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/idTVscanned"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="#252222"
+            android:padding="10dp"
+            android:text="@string/scanned_data"
+            android:textColor="#4FE195" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="640dp"
+            tools:context=".QrScannerActivity">
+
+            <!--Frame layout is required as we are using camera view-->
+            <!--Below is the scannerliveview which will scan QR code-->
+
+            <!--TextView to display the scanned data-->
+
+
+        </FrameLayout>
+
+
+    </eu.livotov.labs.android.camview.ScannerLiveView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
