@@ -1,6 +1,6 @@
 # GreenI
 
-This is the medaa team's solution to the 12th edition of Polihack, held by OSUT.
+This is the medaa team's solution to the 12th edition of Polihack, organised by OSUT.
 
 This is a mobile app that provides a tool that makes recycling way easier, solving the main issue regarding the lack of frequency of recycling in our day to day lives.
 
@@ -24,7 +24,32 @@ Every user has an account, safely implemented using Google Firebase. The app the
 
 ## Visuals
 
-
+<table>
+  <tr align="center">
+    <img src="demo-images/signup-page.jpeg" width="200px;" alt="Signup page"/><br />
+    <sub><b>Sign Up page</b></sub></a><br />
+  </tr>
+  <tr align="center"> 
+    <img src="demo-images/login-page.jpeg" width="200px;" alt="Login page"/><br />
+    <sub><b>Login page</b></sub></a><br />
+  </tr>
+  <tr align="center">
+    <img src="demo-images/map.jpeg" width="200px;" alt="Map"/><br />
+    <sub><b>Map page</b></sub></a><br />
+  </tr>
+  <tr align="center">
+    <img src="demo-images/centers.jpeg" width="200px;" alt="Adding center"/><br />
+    <sub><b>Adding centers</b></sub></a><br />
+  </tr>
+  <tr align="center">
+    <img src="demo-images/qr-scanner.jpeg" width="200px;" alt="QR scanner"/><br />
+    <sub><b>QR scanner</b></sub></a><br />
+  </tr>
+  <tr align="center">
+    <img src="demo-images/rewards.jpeg" width="200px;" alt="Rewards page"/><br />
+    <sub><b>Rewards page</b></sub></a><br />
+  </tr>
+</table>
 
 ## Used Technologies
 
