@@ -21,3 +21,16 @@ The application includes a reward system that stimulates its user to keep on rec
 ### Safe signing up
 
 Every user has an account, safely implemented using Google Firebase. The app therefore includes Sign Up, Log in, Log out and Forgot your password pages that allow you to navigate through the application. 
+
+## Visuals
+
+
+
+## Used Technologies
+
+The code is written in Java, using Android Studio. 
+For the user management system and the database, we used Google Firebase.
+
+## Project Status
+
+This is more of a concept of the app, altough fully functional. The proper development of it stopped after the hackathon, but we are looking forward to further developing it.
